@@ -1,0 +1,5 @@
+Artificial Intelligence is transforming education.
+
+Retrieval-Augmented Generation (RAG) combines search with large language models.
+
+Students can ask questions about uploaded documents and receive grounded answers.

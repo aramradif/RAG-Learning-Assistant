@@ -1,3 +1,10 @@
+![Python](https://img.shields.io/badge/Python-3.14-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-Framework-009688?logo=fastapi)
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991?logo=openai)
+![ChromaDB](https://img.shields.io/badge/Vector%20DB-ChromaDB-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+
 # RAG Learning Assistant
 
 Production-grade Retrieval-Augmented Generation (RAG) application built with FastAPI, OpenAI Embeddings, ChromaDB, and GPT-4o-mini.
@@ -5,6 +12,10 @@ Production-grade Retrieval-Augmented Generation (RAG) application built with Fas
 This project demonstrates how modern AI systems combine semantic search, vector databases, and large language models to deliver grounded and context-aware answers from custom knowledge sources.
 
 Designed as an enterprise-style AI Engineering project for scalable educational and knowledge retrieval applications.
+
+## System Architecture
+
+![RAG Architecture](assets/architecture.png)
 
 
 ## Project Status
@@ -206,6 +217,12 @@ pip install -r requirements.txt
 
 
 ## Running the API
+
+## API Documentation
+
+The application includes interactive Swagger UI documentation.
+
+![Swagger UI](assets/swagger-ui.png)
 
 Start FastAPI:
 

@@ -10,9 +10,7 @@ def ask_rag(question: str) -> str:
 
     results = search_documents(question)
 
-    context = "\n".join(
-        results["documents"][0]
-    )
+    context = "\n".join(results["documents"][0])
 
     prompt = f"""
 Use the provided context to answer the question.

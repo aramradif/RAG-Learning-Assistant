@@ -12,7 +12,6 @@ def load_markdown(file_path: str) -> str:
         "r",
         encoding="utf-8",
     ) as file:
-
         md = file.read()
 
     html = markdown(md)

@@ -10,7 +10,6 @@ metadatas = results["metadatas"][0]
 print("\nSearch Results:\n")
 
 for document, metadata in zip(documents, metadatas):
-
     print(f"Source : {metadata['source']}")
     print(f"Chunk  : {metadata['chunk']}")
     print()

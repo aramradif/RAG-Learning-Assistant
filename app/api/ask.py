@@ -16,10 +16,6 @@ router = APIRouter()
 def ask_question(
     request: QuestionRequest,
 ):
-    answer = ask_rag(
-        request.question
-    )
+    answer = ask_rag(request.question)
 
-    return AnswerResponse(
-        answer=answer
-    )
+    return AnswerResponse(answer=answer)

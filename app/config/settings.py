@@ -4,9 +4,7 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):
     APP_NAME: str = "RAG Learning Assistant API"
     APP_VERSION: str = "1.0.0"
-    APP_DESCRIPTION: str = (
-        "Production-ready Retrieval-Augmented Generation API"
-    )
+    APP_DESCRIPTION: str = "Production-ready Retrieval-Augmented Generation API"
 
     OPENAI_API_KEY: str = ""
 

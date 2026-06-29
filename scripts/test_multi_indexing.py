@@ -8,22 +8,15 @@ documents = load_documents("data")
 total_chunks = 0
 
 for document in documents:
-
-    chunks = chunk_text(
-        document["content"]
-    )
+    chunks = chunk_text(document["content"])
 
     index_chunks(
-    chunks,
-    source=document["filename"],
-)
+        chunks,
+        source=document["filename"],
+    )
 
     total_chunks += len(chunks)
 
-print(
-    f"Indexed {len(documents)} documents."
-)
+print(f"Indexed {len(documents)} documents.")
 
-print(
-    f"Indexed {total_chunks} chunks."
-)
+print(f"Indexed {total_chunks} chunks.")

@@ -4,9 +4,7 @@ from app.embeddings.openai_embeddings import (
 
 embedding_model = get_embedding_model()
 
-vector = embedding_model.embed_query(
-    "Artificial Intelligence"
-)
+vector = embedding_model.embed_query("Artificial Intelligence")
 
 print("Embedding Length:", len(vector))
 

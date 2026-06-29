@@ -7,14 +7,29 @@ def search_documents(
     top_k: int = 3,
 ):
     """
-    Search for similar documents.
+    Semantic search using ChromaDB.
     """
 
-    query_embedding = get_embedding(query)
+    embedding = get_embedding(query)
 
     results = collection.query(
-        query_embeddings=[query_embedding],
+        query_embeddings=[embedding],
         n_results=top_k,
     )
 
-    return results
+    documents = []
+
+    docs = results["documents"][0]
+    metadata = results["metadatas"][0]
+
+    for doc, meta in zip(docs, metadata):
+        documents.append(
+            {
+                "content": doc,
+                "source": meta["source"],
+                "chunk": meta["chunk"],
+                "retrieval": "semantic",
+            }
+        )
+
+    return documents

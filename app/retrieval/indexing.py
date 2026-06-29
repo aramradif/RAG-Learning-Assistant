@@ -10,7 +10,6 @@ def index_chunks(
 ):
 
     for i, chunk in enumerate(chunks):
-
         embedding = get_embedding(chunk)
 
         collection.add(

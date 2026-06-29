@@ -13,7 +13,6 @@ def load_documents(folder_path: str):
     folder = Path(folder_path)
 
     for file in folder.iterdir():
-
         if file.is_dir():
             continue
 

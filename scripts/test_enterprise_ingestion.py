@@ -7,7 +7,6 @@ documents = load_documents("data")
 total_chunks = 0
 
 for document in documents:
-
     chunks = chunk_text(document["content"])
 
     index_chunks(
